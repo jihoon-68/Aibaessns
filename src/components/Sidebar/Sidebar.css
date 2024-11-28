@@ -1,0 +1,122 @@
+/* Sidebar.css */
+.main{
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.sidebar {
+  width: 250px; /* 기본 너비 */
+  height: 100%; /* 전체 화면 높이 */
+  background-color: #282c34; /* 어두운 배경 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed; /* 화면 왼쪽 고정 */
+  left: 0; /* 왼쪽 위치 */
+  top: 0; /* 상단 고정 */
+  justify-content: space-between;
+  z-index: 99;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.sidebar_container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar_container_user{
+  width: 90%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 10px;
+  color: white;
+}
+.sidebar_container_user_img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.sidebar_logo {
+  width: 80px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 50%; /* 로고를 원형으로 */
+}
+.sidebar_logo.collapsed{
+  width: 60px;
+}
+
+.sidebar_option {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.sidebar_option.collapsed{
+  width: 50%;
+}
+
+.sidebar_option:hover {
+  background-color: #61dafb; /* 밝은 파란색 하이라이트 */
+  color: #282c34; /* 텍스트 색상 반전 */
+}
+
+.sidebar_option span {
+  margin-left: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.sidebar_option svg {
+  font-size: 1.5rem;
+}
+/* Search 영역*/
+.Search{
+  width: 20%;
+  min-width: 325px;
+  height: 100VH;
+  background-color:rgb(255, 255, 255);
+  left: 60px;
+  top: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+  border-right: 1px solid rgb(223, 223, 223) ;
+}
+
+/* Content 영역 */
+.content {
+  margin-left: 250px; /* Sidebar 기본 너비 */
+  flex-grow: 1; /* 남은 공간을 채움 */
+  transition: margin-left 0.3s ease;
+}
+.content.collapsed{
+  margin-left: 60px;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* 작은 화면에서 사이드바 너비 줄이기 */
+  }
+
+  .sidebar_option span {
+    font-size: 0.9rem; /* 텍스트 크기 조정 */
+  }
+}

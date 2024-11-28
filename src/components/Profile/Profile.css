@@ -1,0 +1,89 @@
+/* Profile 스타일 */
+.profile-container {
+    width: 930px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-picture {
+    margin-right: 25px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+  }
+  
+  .profile-details {
+    flex: 2;
+  }
+  
+  .profile-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile-name h2 {
+    margin: 0;
+  }
+  
+  .profile-name button {
+    padding: 5px 10px;
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .profile-stats {
+    margin: 10px 0;
+    display: flex;
+    gap: 20px;
+  }
+
+  .profile-tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .profile-tabs button {
+    padding: 10px;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #999;
+  }
+  
+  .profile-tabs button.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+  }
+
+  .profile-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  /* 팝업 오버레이 */
+
+  /* 팝업 */
+ 

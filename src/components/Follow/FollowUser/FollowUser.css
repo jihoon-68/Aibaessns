@@ -1,0 +1,23 @@
+.follow{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.follow button {
+    width: 100px;
+    height: 30px;
+    padding: 5px 10px;
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.followImg{
+    border-radius: 50px;
+    margin-right: 10px;
+}

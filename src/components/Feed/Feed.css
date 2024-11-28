@@ -1,0 +1,12 @@
+/* Feed.css */
+
+.feed {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .feed .post {
+    margin-bottom: 20px;
+  }
+  

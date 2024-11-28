@@ -1,0 +1,163 @@
+/* 전체 컨테이너 */
+.messages-container {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* 좌측 사이드바 */
+  .chat-sidebar {
+    width: 20%;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+  }
+  
+  .chat-sidebar h2 {
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+  }
+  
+  .chat-sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .chat-sidebar ul li {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .chat-sidebar ul li.active {
+    background-color: #e8f4ff;
+  }
+  
+  .chat-sidebar ul li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .details {
+    flex: 1;
+  }
+  
+  .details .name {
+    font-weight: bold;
+  }
+  
+  .details .last-message {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .time {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+  /* 우측 메시지 화면 */
+  .chat-window {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-header {
+    display: flex;
+    flex-direction: row;
+    padding: 12.5px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    align-items: center;
+  }
+  .chat-header h3{
+    margin:0 10px;
+    background-color: #fff;
+  }
+  .chat-header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+
+  .chat-body {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    max-width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .message p {
+    margin: 0;
+  }
+  
+  .message.me {
+    margin-left: auto;
+    background-color: #d1f5d3;
+    text-align: right;
+  }
+  
+  .message.other {
+    margin-right: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .message .time {
+    display: block;
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 5px;
+  }
+  
+  /* 입력창 */
+  .chat-input {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .chat-input button {
+    padding: 10px 15px;
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .chat-input button:hover {
+    background-color: #007bb5;
+  }
+  
